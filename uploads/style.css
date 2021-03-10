@@ -1,0 +1,1921 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height: 750px;
+    width: 100%;
+    background-image: linear-gradient(rgba(238, 122, 40, 0.3),rgba(238,122,40,0.3)),url(slider-01.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.bar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 1px 4px 1px gray;
+}
+.bar img{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 130px;
+    top: 10px;
+    cursor: pointer;  
+}
+.ul1{
+    position: absolute;
+    right: 120px;
+    top: 10px;
+    /* transition-property: all; */
+}
+.ul1>li{
+    font-family: 'Josefin Sans', sans-serif;
+    float: left;
+    list-style: none;
+    padding: 16px 16px;
+    /* transition-duration: 1s; */
+}
+.ul1>li:nth-child(1){
+    color: peru;
+    border-bottom: 3px solid peru;
+}
+.ul1>li:hover{
+    cursor: pointer;
+    color: peru;
+    border-bottom: 3px solid peru;
+    /* transition-duration: 2s; */
+}
+.container h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding-left: 220px;
+    padding-top: 230px;
+}
+.container p{
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: -260px;
+    top: 20px;
+}
+.b1{
+    height: 50px;
+    width: 150px;
+    background-color:rgb(53, 52, 52);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    left: 250px;
+    top: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.b1::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    transition-property: all;
+    visibility: hidden;
+    transition-duration: 1s;
+}
+.b1:hover.b1::before{
+    left: 0;
+    visibility: visible;
+    transition-duration: 1s;
+}
+.b2{
+    height: 50px;
+    width: 150px;
+    background-color:rgb(53, 52, 52);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    left: 260px;
+    top: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.b2::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    transition-property: all;
+    visibility: hidden;
+    transition-duration: 1s;
+}
+.b2:hover.b2::before{
+    left: 0;
+    visibility: visible;
+    transition-duration: 1s;
+}
+.pic{
+    height: 460px;
+    width: 370px;
+    position: absolute;
+    top: 180px;
+    right: 250px;
+    background-image: url(app_iphone_01.png);
+    background-size: 100% 100%;
+}
+.container1{
+    height: 1400px;
+    width: 100%;
+    position: relative;
+}
+.container1 h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    padding-top: 100px;
+}
+.container1 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: gray;
+    padding-top: 40px;
+}
+.box{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+.box h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    right: 360px;
+    top: -15px;
+}
+.box p{
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    text-align: unset;
+    right: 100px;
+    font-size: 18px;
+    top: 110px;
+}
+.box img{
+    height: 500px;
+    width: 600px;
+    position: relative;
+    left: 100px;
+}
+.box1{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+.box1 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left:100px;
+    top: -15px;
+}
+.box1 p{
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    text-align: unset;
+    left: 100px;
+    font-size: 18px;
+    top: 110px;
+}
+.box1 img{
+    height: 500px;
+    width: 600px;
+    position: relative;
+    left: 650px;
+}
+.container2{
+    height: 1050px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+.container2 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+.container2 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: gray;
+    padding-top: 40px;
+}
+.box2{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    top: 300px;
+}
+.box2:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box2:hover .boxx::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 30px;
+    top: 20px;
+}
+.box2 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box2 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.box3{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 490px;
+    top: 300px;
+}
+.box3:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx1{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx1::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box3:hover .boxx1::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 30px;
+    top: 20px;
+}
+.box3 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box3 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.box4{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 900px;
+    top: 300px;
+}
+.box4:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx2{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx2::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box4:hover .boxx2::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 30px;
+    top: 20px;
+}
+.box4 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box4 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.box5{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 80px;
+    top: 630px;
+}
+.box5:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx3{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx3::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box5:hover .boxx3::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 20px;
+    top: 20px;
+}
+.box5 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box5 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.box6{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 490px;
+    top: 630px;
+}
+.box6:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx4{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx4::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box6:hover .boxx4::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 30px;
+    top: 20px;
+}
+.box6 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box6 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.box7{
+    height: 300px;
+    width: 380px;
+    background-color: white;
+    position: absolute;
+    left: 900px;
+    top: 630px;
+}
+.box7:hover{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.boxx5{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    left: 15px;
+    top: 15px;
+}
+.boxx5::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: orangered;
+    position: absolute;
+    transform: scale(.8);
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.box7:hover .boxx5::after{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.icon1{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    left: 20px;
+    top: 20px;
+}
+.box7 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+}
+.box7 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+    text-align: unset;
+}
+.center{
+    height: 300px;
+    width: 100%;
+    background-color:rgb(53, 52, 52);
+    position: relative;
+}
+.box8{
+    height: 100%;
+    width: 335px;
+    /* border: 1px solid black; */
+    position: absolute;
+}
+.box8 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+.box8 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.box8:hover{
+    background-image: url(01.GIF);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.box9{
+    height: 100%;
+    width: 335px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 335px;
+}
+.box9 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+.box9 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.box9:hover{
+    background-image: url(01.GIF);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.box10{
+    height: 100%;
+    width: 335px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 670px;
+}
+.box10 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+.box10 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.box10:hover{
+    background-image: url(01.GIF);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.box11{
+    height: 100%;
+    width: 340px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 1005px;
+}
+.box11 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+.box11 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.box11:hover{
+    background-image: url(01.GIF);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.container3{
+    height: 1100px;
+    width: 100%;
+    position: relative;
+}
+.container3 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
+.container3 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    text-align: center;
+    padding-top: 40px;
+}
+.pic1{
+    height: 550px;
+    width: 350px;
+    background-image: url(screenshot_04.png);
+    background-size: 100% 100%;
+    transform: skewY(10deg);
+    position: absolute;
+    left: 120px;
+    top: 300px;
+}
+.pic2{
+    height: 650px;
+    width: 400px;
+    background-image: url(app-mobile.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 470px;
+    top: 280px;
+}
+.pic2 img{
+    height: 630px;
+    width: 360px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    border-radius: 40px;
+}
+.pic3{
+    height: 550px;
+    width: 350px;
+    background-image: url(screenshot_02.png);
+    background-size: 100% 100%;
+    transform: skewY(-10deg);
+    position: absolute;
+    right: 130px;
+    top: 300px;
+}
+.container4{
+    height: 550px;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(240, 130, 50, 0.6),rgba(240, 130, 50, 0.6)),url(d-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.container4 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 45px;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+.container4 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.pic4{
+    height: 350px;
+    width: 550px;
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    background-image: url(iphones.png);
+    background-size: 100% 100%;
+}
+.container5{
+    height: 1100px;
+    width: 100%;
+    position: relative;
+}
+.box12{
+    height: 120px;
+    width: 200px;
+    background-color:rgb(53, 52, 52);
+    position: absolute;
+    left: 350px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.icon2{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+.box12 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+}
+.box12 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.box12:hover{
+    cursor: pointer;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.box13{
+    height: 120px;
+    width: 200px;
+    background-color:rgb(53, 52, 52);
+    position: absolute;
+    left: 560px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.icon2{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    top: 5px;
+}
+.box13 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+}
+.box13 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.box13:hover{
+    cursor: pointer;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.box14{
+    height: 120px;
+    width: 200px;
+    background-color:rgb(53, 52, 52);
+    position: absolute;
+    left: 770px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.icon2{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    top: 5px;
+}
+.box14 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+}
+.box14 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.box14:hover{
+    cursor: pointer;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.container5 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    padding-top: 250px;
+    text-align: center;
+}
+.container5 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    color: gray;
+}
+.box15{
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    left: 100px;
+    top: 430px;
+    transition-property: all;
+    overflow: hidden;
+    
+}
+.boxx6{
+    height: 350px;
+    width: 350px;
+    background-image: url(team_01.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.boxx6::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: -100%;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+.box15:hover .boxx6::before{
+    bottom: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.r1{
+    height: 260px;
+    width: 60px;
+    background-color: orangered;
+    position: absolute;
+    right: 10px;
+    top: -100%;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.icon3{
+    color: white;
+    font-size: 25px;
+    padding: 20px 20px;
+    /* border: 1px solid black; */
+}
+.icon3:hover{
+    cursor: pointer;
+    color: gray;
+}
+.box15:hover .r1{
+    transition-duration: 1s;
+    top: 0;
+    visibility: visible;
+} 
+.box15 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.box15 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: orangered;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: -200px;
+    
+}
+.box15 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: gray;
+    position: relative;
+    top: -210px;
+}
+.box16{
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    left: 500px;
+    top: 430px;
+    transition-property: all;
+    overflow: hidden;
+}
+.boxx7{
+    height: 350px;
+    width: 350px;
+    background-image: url(team_02.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.boxx7::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: -100%;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+.box16:hover .boxx7::before{
+    bottom: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.r2{
+    height: 260px;
+    width: 60px;
+    background-color: orangered;
+    position: absolute;
+    right: 10px;
+    top: -100%;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.box16:hover .r2{
+    transition-duration: 1s;
+    top: 0;
+    visibility: visible;
+}
+.box16 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.box16 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: orangered;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: -200px;
+    
+}
+.box16 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: gray;
+    position: relative;
+    top: -210px;
+}
+.box17{
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    left: 900px;
+    top: 430px;
+    transition-property: all;
+    overflow: hidden;
+}
+.boxx8{
+    height: 350px;
+    width: 350px;
+    background-image: url(team_03.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.boxx8::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: -100%;
+    transition-duration: 1s;
+    visibility: hidden;
+}
+.box17:hover .boxx8::before{
+    bottom: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.r3{
+    height: 260px;
+    width: 60px;
+    background-color: orangered;
+    position: absolute;
+    right: 10px;
+    top: -100%;
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.box17:hover .r3{
+    transition-duration: 1s;
+    top: 0;
+    visibility: visible;
+}
+.box17 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.box17 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: orangered;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: -200px;
+    
+}
+.box17 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: gray;
+    position: relative;
+    top: -210px;
+}
+.container6{
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(ben_img_2.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+.rec{
+    height: 260px;
+    width: 250px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec:hover{
+    border-radius: 50px;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.recc{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    margin: auto;
+    position: relative;
+}
+.recc i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+}
+.rec h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.rec h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.rec1{
+    height: 260px;
+    width: 250px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec1:hover{
+    border-radius: 50px;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.recc1{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    margin: auto;
+    position: relative;
+}
+.recc1 i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+}
+.rec1 h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.rec1 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.rec2{
+    height: 260px;
+    width: 250px;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec2:hover{
+    border-radius: 50px;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.recc2{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    margin: auto;
+    position: relative;
+}
+.recc2 i7{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+.rec2 h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.rec2 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.rec3{
+    height: 260px;
+    width: 250px;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec3:hover{
+    border-radius: 50px;
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.recc3{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    margin: auto;
+    position: relative;
+}
+.recc3 i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+.rec3 h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.rec3 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.container7{
+    height: 1000px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+.container7 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+.container7 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    text-align: center;
+    padding-top: 30px;
+}
+.rec4{
+    height:550px;
+    width: 350px;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+.rec4:hover{
+    box-shadow: 1px 1px 6px 4px lightgray;
+}
+.rec4 h1{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+.rec4 h2{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+.b3{
+    height: 60px;
+    width: 250px;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 99%, 0% 50%);
+    background-color: rgb(97, 88, 88);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+    border: none;
+    outline: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec4:hover .b3{
+    transition-duration: 1s;
+    background-color: orangered;
+}
+.ul2>li{
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    top: 20px;
+}
+.btn4{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(97, 88, 88);
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn4::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: -100%;
+    transition-property: all;
+    visibility: hidden;
+    z-index: -1;
+    transition-duration: 1s;
+}
+.btn4:hover.btn4::before{
+    left: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.rec5{
+    height:550px;
+    width: 350px;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    box-shadow: 1px 1px 6px 4px lightgray;
+}
+.rec5 h1{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+.rec5 h2{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+.b3{
+    height: 60px;
+    width: 250px;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 99%, 0% 50%);
+    background-color: rgb(97, 88, 88);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+    border: none;
+    outline: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.rec5:hover .b3{
+    transition-duration: 1s;
+    background-color: orangered;
+}
+.ul2.l1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    padding: 20px;
+}
+.b4{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(97, 88, 88);
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 100px;
+    top: 240px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.b4::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: -100%;
+    transition-property: all;
+    visibility: hidden;
+}
+.b4:hover.b4::before{
+    left: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.rec6{
+    height:550px;
+    width: 350px;
+    position: absolute;
+    left: 900px;
+    top: 300px;
+}
+.rec6:hover{
+    box-shadow: 1px 1px 6px 4px lightgray;
+}
+.rec6 h1{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+.rec6 h2{
+    color: orangered;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+.b3{
+    height: 60px;
+    width: 250px;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 99%, 0% 50%);
+    background-color: rgb(97, 88, 88);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+    border: none;
+    outline: none;
+    transition-property: all;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+.rec6:hover .b3{
+    transition-duration: 1s;
+    background-color: orangered;
+}
+.ul2.l1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    padding: 20px;
+}
+.b4{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(97, 88, 88);
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 100px;
+    top: 240px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+.b4::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: -100%;
+    transition-property: all;
+    visibility: hidden;
+    z-index: -1;
+    transition-duration: 1s;
+}
+.b4:hover.b4::before{
+    left: 0;
+    transition-duration: 1s;
+    visibility: visible;
+}
+.container8{
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+.container8 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+.container8 p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    color: gray;
+}
+.rec7{
+    height: 350px;
+    width: 600px;
+    margin: 70px auto;
+    box-shadow: 1px 1px 5px 1px lightgrey;
+}
+.rec7 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: gray;
+    text-align: center;
+    padding-top: 50px;
+}
+.rec7 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+.rec7 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+    padding-top: 20px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border: 3px solid orangered;
+    border-radius: 50%;
+    background-image: url(img-2.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 210px;
+    top: 10px;
+    cursor: pointer;
+}
+.circle1{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(img-1.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 280px;
+    top: -45px;
+    cursor: pointer;
+}
+.circle2{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(img-3.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 350px;
+    top: -100px;
+    cursor: pointer;
+}
+.container9{
+    height: 550px;
+    width: 100%;
+    background-color: orangered;
+    position: relative;
+}
+.rec8{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 160px;
+    left: 200px;
+    cursor: pointer;
+}
+.rec8 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.circle3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top:10px;
+    right: 20px;
+}
+.circle3 i{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+.rec9{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 230px;
+    left: 200px;
+    cursor: pointer;
+}
+.rec9 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.circle3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top:10px;
+    right: 20px;
+}
+.circle3 i{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+.rec10{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    cursor: pointer;
+}
+.rec10 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.circle3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top:10px;
+    right: 20px;
+}
+.circle3 i{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+.container9::after{
+    content: "";
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    background-image: url(about-02.png);
+    background-size: 100% 100%;
+}
+.container10{
+    height: 800px;
+    width: 100%;
+    background-image: url(bg.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+.container10 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.name{
+    height: 50px;
+    width: 550px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.name1{
+    height: 50px;
+    width: 550px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    position: absolute;
+    left: 700px;
+    top: 300px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.name2{
+    height: 50px;
+    width: 550px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 380px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.name3{
+    height: 50px;
+    width: 550px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    position: absolute;
+    left: 700px;
+    top: 380px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.name4{
+    height: 50px;
+    width: 1150px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 550px;
+}
+::placeholder{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.b5{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 100px;
+    top: 480px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.b5::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:orangered;
+    left: -100%;
+    top: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    visibility: hidden;
+    z-index: -1;
+}
+.b5:hover.b5::before{
+    transition-duration: 1s;
+    visibility: visible;
+    left: 0;
+}
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color:rgb(53, 52, 52);
+}
+.footer h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+.footer p{
+    color: gray;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.email{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    left: 450px;
+    top: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+}
+.email::placeholder{
+    color: gray;
+}
+.b6{
+    height: 50px;
+    width: 110px;
+    background-color: orangered;
+    position: relative;
+    left:445px;
+    top: 44px;
+    border: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.b6:hover{
+    transition-duration: 1s;
+    background-color:rgb(31, 30, 30);
+    cursor: pointer;
+}
+.b6 i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 11px;
+    left: 40px;
+}
